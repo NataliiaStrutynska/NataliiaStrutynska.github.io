@@ -1,0 +1,136 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+
+%h2{
+    font-family: Symbol, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    color: $text-color;
+    line-height: 26px;
+}
+
+%p{
+    font-family: Symbol, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: $text-color;
+    line-height: 18px;
+}
+
+.body-box{
+    width: 100%;
+    height: 820px;
+    background-color: $main-color;
+    display: flex;
+}
+
+.items-wrapper{
+    width: 100%;
+    height: 220px;
+    margin-top: 120px;
+    background-color: $second-color;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: left;
+    align-items: center;
+}
+.item{
+    width: 90px;
+    height: 100%;
+    margin-right: 2px;
+    background-color: $item-color;
+    position: relative;
+    &-icon{
+        width: 90px;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-icon-max{
+        width: 0px;
+        height: 100%;
+        position: absolute;
+        left: 90px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+        &_twitter{
+            background-color: $twitter-color;
+        }
+        &_facebook{
+            background-color: $facebook-color;
+        }
+        &_linkedIn{
+            background-color: $linkedIn-color;
+        }
+        &_instagram{
+            background-color: $instagram-color;
+        }
+        &_youtube{
+            background-color: $youTube-color;
+        }
+        &_tumblr{
+            background-color: $tumbler-color;
+        }
+        &_dribbble{
+            background-color: $dribble-color;
+        }
+    }
+    &-info{
+        width: 0px;
+        height: 100%;
+        position: absolute;
+        left: 90px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0);
+        &-header{
+            @include icon(300px, 20%, block);
+            @extend %h2;
+        }
+        &-text{
+            @include icon(300px, 20%, block);
+            @extend %p;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        width: 490px;
+        transition-property: width;
+        transition: all 3s ease;
+        transition-duration: 1s;
+    }
+    &:hover &-icon{
+        width: 0px;
+        left: 0px;
+        transition-property: left;
+        transition: all 1s ease;
+        transition-duration: 0.1s;
+    }
+    &:hover &-icon-max{
+        width: 90px;
+        left: 0px;
+        transition-property: left;
+        transition: all 2s cubic-bezier(0.18, 0.89, 0.07, 1.43);
+        transition-duration: 0.7s;
+    }
+    &:hover &-info{
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.92);
+        transition-property: background-color;
+        transition-timing-function: ease-in;
+        transition: all 5s ease;
+        transition-duration: 5s;
+    }
+}
+.icon{
+    @include icon(30px, 30px, block);
+}
+.icon-max{
+    @include icon(60px, 60px, block);
+}
