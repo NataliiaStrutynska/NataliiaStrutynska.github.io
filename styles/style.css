@@ -120,7 +120,7 @@ header {
       grid-row-start: 1;
   grid-row-end: 2;
   background-image: url(./images/headerBackground.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;

@@ -39,7 +39,7 @@ header {
     grid-row-start: 1;
     grid-row-end: 2;
     background-image: url(./images/headerBackground.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
