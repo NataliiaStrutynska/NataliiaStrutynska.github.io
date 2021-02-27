@@ -898,9 +898,9 @@ header .header-container .title-block__find-button {
         grid-template-columns: 10px 1fr 10px;
   }
   header .header-container {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
   }
   header .header-container .logo-block {
     height: 160px;
@@ -920,6 +920,7 @@ header .header-container .title-block__find-button {
   header .header-container .logo-block__logo {
     position: absolute;
     top: 150px;
+    margin: 0px;
   }
   header .header-container .logo-block__buttons {
     margin: 0px;
@@ -939,9 +940,9 @@ header .header-container .title-block__find-button {
     margin-top: 25px;
   }
   header .header-container .title-block__main-title {
-    width: 470px;
-    font-size: 52px;
-    line-height: 63px;
+    width: 272px;
+    font-size: 30px;
+    line-height: 37px;
   }
   header .header-container .title-block__subtitle {
     margin: 7px 0 15px 0;

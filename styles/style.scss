@@ -647,8 +647,8 @@ header {
         background-position: center;
         grid-template-columns: 10px 1fr 10px;
         .header-container {
-            grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
             .logo-block {
                 height: 160px;
                 padding-top: 40px;
@@ -659,6 +659,7 @@ header {
                 &__logo {
                     position: absolute;
                     top: 150px;
+                    margin: 0px;
                 }
                 &__buttons {
                     margin: 0px;
@@ -681,9 +682,9 @@ header {
                 margin-top: 25px;
     
                 &__main-title {
-                    width: 470px;
-                    font-size: 52px;
-                    line-height: 63px;
+                    width: 272px;
+                    font-size: 30px;
+                    line-height: 37px;
                 }
     
                 &__subtitle {
