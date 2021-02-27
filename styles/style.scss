@@ -2,9 +2,10 @@
 @import 'base/normalize';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Roboto:wght@300&display=swap');
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
 button {
     border-radius: 40px;
     text-align: center;
@@ -51,7 +52,7 @@ header {
 
         .logo-block {
             padding-top: 40px;
-            display: flex; 
+            display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
 
@@ -486,6 +487,7 @@ header {
             line-height: 20px;
             color: $button-color;
         }
+
         &__box-company {
             grid-column-start: 4;
             grid-column-end: 6;
@@ -541,16 +543,18 @@ header {
         background-size: cover;
         background-position: center;
         grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+
         .header-container {
             grid-column-start: 2;
             grid-column-end: 8;
             width: 100%;
+
             .logo-block {
                 padding-top: 40px;
-                display: flex; 
+                display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-between;
-    
+
                 &__logo {
                     margin-left: 40px;
                 }
@@ -640,34 +644,39 @@ header {
         grid-template-rows: 540px 780px 1030px 990px 195px 250px;
         row-gap: 35px;
     }
-    header{
+
+    header {
         grid-column-start: 1;
         grid-column-end: 4;
         background-size: cover;
         background-position: center;
         grid-template-columns: 10px 1fr 10px;
+
         .header-container {
             grid-column-start: 2;
             grid-column-end: 3;
+
             .logo-block {
                 height: 160px;
                 padding-top: 40px;
-                display: flex; 
+                display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 position: relative;
+
                 &__logo {
                     position: absolute;
                     top: 150px;
                     margin: 0px;
                 }
+
                 &__buttons {
                     margin: 0px;
 
                     &__login {
                         margin-right: 20px;
                     }
-    
+
                     &__signup {
                         width: 90px;
                         height: 36px;
@@ -677,20 +686,20 @@ header {
                     }
                 }
             }
-    
+
             .title-block {
                 margin-top: 25px;
-    
+
                 &__main-title {
-                    width: 272px;
+                    width: 282px;
                     font-size: 30px;
                     line-height: 37px;
                 }
-    
+
                 &__subtitle {
                     margin: 7px 0 15px 0;
                 }
-    
+
                 &__find-button {
                     width: 90%;
                     margin: 0 3rem;
